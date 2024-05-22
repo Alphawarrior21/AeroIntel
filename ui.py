@@ -16,7 +16,7 @@ def set_background(image_url):
         background-image: url("{image_url}");
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
+        backgit config --global user.name "Your Name"ground-repeat: no-repeat;
     }}
     </style>
     """
