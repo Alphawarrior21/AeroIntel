@@ -130,6 +130,31 @@ WSL is a compatibility layer for running Linux binary executables natively on Wi
 12. Run the Ui via `ui.py`
        ```streamlit run ui.py```
 
+### Technology stack Used ###
+
+- LLM Models : OPENAI's gpt-3.5-turbo via [PATHWAY LIB WRAPPER](https://github.com/pathwaycom/llm-app)
+- ENCODER MODEL : text-embedding-ada-002
+
+**Streaming Pipeline:**
+The incoming data from these sources is processed and after processing, the data is split into smaller chunks. This is necessary because it’s often more efficient to work with smaller pieces of text when performing NLP tasks. The changes in data are automatically synced to the pipeline enabling real-time Retrieval Augmented Generation (RAG) using llm-app .
+Embedding:
+These chunks are then embedded into a vector space using an OpenAI embedding model. Embedding converts text data into numerical vectors that capture the semantic meaning of the text.
+
+**KNN Vector Indexing:**
+The numerical vectors are indexed using a KNN (k-nearest neighbors) algorithm. In used to quickly retrieve the most relevant text chunks in response to a query based on vector similarity. The AURA is reactive to changes to the corpus of documents: once new snippets are provided, it reindexes them and starts to use the new knowledge to answer subsequent queries. This technique is significantly faster and more efficient than conducting individual comparisons between the query and every document.
+
+**User Query Processing:**
+When a user submits a query, a Spacy module is used to extract relevant keywords from the question. Spacy is an open-source software library for advanced NLP.
+Concurrently, the user's question is also embedded using the same OpenAI embedding model to ensure that the question and the data chunks are in the same vector space.
+
+**Integration of User Query and Knowledge Base:**
+The embedded user query is then used to perform a KNN search in the vector index to find the most relevant chunks of embedded data from the processed sources.
+This combination of user query embeddings and indexed data allows the system to understand and retrieve information that is contextually relevant to the user's question.
+
+**Response Generation:**
+The LLM (Large Language Model), uses the retrieved information to generate an appropriate response.
+The response generation is likely informed by a prompt template, which structures how the model should incorporate the information into a coherent reply.
+
 
 
 
