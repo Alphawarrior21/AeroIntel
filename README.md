@@ -4,7 +4,9 @@
 <img src="image/GifMaker_20240525233544975.gif" alt="Image" width="600"/>
 
 **Overview:**
-AeroIntel is a cutting-edge RAG based AI assistant chatbot-GPT powered by OpenAI & Pathway created to aid government policymakers and high officials, especially from the Center of Atmospheric Sciences. This application delivers detailed insights and data on air quality, pollution control initiatives, and the health impacts of air pollution across India. AeroIntel leverages advanced AI technologies to support informed decision-making and effective policy implementation to combat air pollution.
+
+ AeroIntel is a cutting-edge RAG based AI assistant chatbot-GPT powered by OpenAI & Pathway created to aid government policymakers and high officials, especially from the Center of Atmospheric Sciences. This application delivers detailed insights and data on air quality, pollution control initiatives, and the health impacts of air pollution across India. AeroIntel 
+ leverages advanced AI technologies to support informed decision-making and effective policy implementation to combat air pollution.
 
 **End Users:**
   - *Government Officials*: High-ranking officials responsible for maintaining air quality standards and addressing environmental challenges. AeroIntel provides critical insights for identifying pollution hotspots, implementing policy changes, and making informed decisions.
@@ -16,10 +18,11 @@ AeroIntel is a cutting-edge RAG based AI assistant chatbot-GPT powered by OpenAI
   - *Non-Governmental*: Environmental advocacy groups using AeroIntel for reliable data to raise awareness, campaign for policy changes, and monitor environmental health.
   - *Public Health Organizations*: NGOs focused on public health outcomes related to air quality. AeroIntel offers data on health impacts, aiding in the development of programs and policies to protect public health.
     
-**Impacted Industry:** Environment and Socio-Economic (Policy makers)
+**Impacted Industry:**  
+ Environment and Socio-Economic (Policy makers)
 
 **Business Usecase:**
-AeroIntel is designed to be an invaluable tool for officials involved in environmental policy and management. By providing accurate, timely information, it supports efforts to mitigate air pollution and protect public health.Below are the top features/usecases that can be executed by the end users using aerointel.
+ AeroIntel is designed to be an invaluable tool for officials involved in environmental policy and management. By providing accurate, timely information, it supports efforts to mitigate air pollution and protect public health.Below are the top features/usecases that can be executed by the end users using aerointel.
 
 1. **Air Quality Data:**
    - Access real-time and historical air quality data for various regions in India.
