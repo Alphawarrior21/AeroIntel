@@ -15,6 +15,8 @@ AeroIntel is a cutting-edge RAG based AI assistant chatbot-GPT powered by OpenAI
   - *Think Tanks*: Organizations dedicated to policy analysis and advocacy in the environmental sector. AeroIntel provides comprehensive data for policy recommendations and reports.
   - *Non-Governmental*: Environmental advocacy groups using AeroIntel for reliable data to raise awareness, campaign for policy changes, and monitor environmental health.
   - *Public Health Organizations*: NGOs focused on public health outcomes related to air quality. AeroIntel offers data on health impacts, aiding in the development of programs and policies to protect public health.
+    
+**Impacted Industry:** Environment and Socio-Economic (Policy makers)
 
 **Business Usecase:**
 AeroIntel is designed to be an invaluable tool for officials involved in environmental policy and management. By providing accurate, timely information, it supports efforts to mitigate air pollution and protect public health.Below are the top features/usecases that can be executed by the end users using aerointel.
