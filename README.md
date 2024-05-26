@@ -125,6 +125,8 @@ WSL is a compatibility layer for running Linux binary executables natively on Wi
        ```streamlit run ui.py```
 
 ### Demo video running project
+<img src="image/GifMaker_20240525233544975.gif" alt="Image" width="600"/>
+
   ![AeroIntel Demo](https://github.com/Alphawarrior21/AeroIntel/tree/main/image/GifMaker_20240525233544975.gif)
 
 
