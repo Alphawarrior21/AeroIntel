@@ -26,15 +26,13 @@
 
 1. **Air Quality Data:**
    - Access real-time and historical air quality data for various regions in India.
-   - Visualize trends and patterns through interactive charts and graphs.
-
+     
 2. **Funding Information:**
    - Obtain details on funds allocated to each state for pollution control.
    - Track the impact of these funds on air quality improvements.
 
 3. **Pollution Hotspots:**
    - Identify states and cities with high pollution levels.
-   - Receive alerts on critical pollution events and emerging hotspots.
 
 4. **Health Impact Analysis:**
    - Explore the health impacts of air pollution on different populations.
