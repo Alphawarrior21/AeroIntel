@@ -72,7 +72,7 @@ WSL is a compatibility layer for running Linux binary executables natively on Wi
      - During installation, enable the option to use the WSL 2-based engine.
      
 4. **Integrate Docker with WSL:**
-<Image of resource>
+<img src="image/DropboxIntWsldemo.png" alt="Image" width="600"/>
 
 5. **Install DropBox:**
      - Since we are using drop box as our context repository,we require drop box and the access token to call drop box api in order to download the context building materials.
@@ -127,7 +127,7 @@ WSL is a compatibility layer for running Linux binary executables natively on Wi
 ### Demo video running project
 <img src="image/GifMaker_20240525233544975.gif" alt="Image" width="600"/>
 
-  ![AeroIntel Demo](https://github.com/Alphawarrior21/AeroIntel/tree/main/image/GifMaker_20240525233544975.gif)
+
 
 
 
