@@ -81,7 +81,7 @@ WSL is a compatibility layer for running Linux binary executables natively on Wi
      - Since we are using drop box as our context repository,we require drop box and the access token to call drop box api in order to download the context building materials.
      - Go to [DropBox oauth-guide](https://developers.dropbox.com/oauth-guide)  site to get your Dropbox access token
 6. **Clone this repo**
-   git clone https://github.com/souvikcseiitk/gate_cse_gpt
+   git clone https://github.com/Alphawarrior21/AeroIntel.git
    Navigate to home directory -> cd AeroIntel
 
     
