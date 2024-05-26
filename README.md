@@ -123,11 +123,8 @@ WSL is a compatibility layer for running Linux binary executables natively on Wi
     
         docker-compose build #one time task; will take time ( ~ 45 mins using iitk-sec(Highspeed-5GHz) )
         docker-compose up
-   
-11. Once your container has been generated you would able to see in the docker app. You can run the app directly from there.
-12. Run the Pathway API :
-
-        python3 main.py
-14. Run the Ui via `ui.py`
-    
-        streamlit run ui.py
+10. Once your container has been generated you would able to see in the docker app. You can run the app directly from there.
+11. Run the Pathway API :
+        `python3 main.py`
+12. Run the Ui via `ui.py`
+       `streamlit run ui.py`
