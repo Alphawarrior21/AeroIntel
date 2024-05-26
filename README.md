@@ -125,13 +125,3 @@ WSL is a compatibility layer for running Linux binary executables natively on Wi
     12. Run the Ui via `ui.py`
         ```python
         streamlit run ui.py
-
-       
-
-
-    
-
-
-
-  
-
