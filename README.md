@@ -115,16 +115,17 @@ WSL is a compatibility layer for running Linux binary executables natively on Wi
         generated embeddings. This could be made more robust in terms of the security but as for now in this project we see this dropbox directory as a golden source.
    
 7. **Install the app dependencies**
-        Install the required packages:
-   
-           pip install --upgrade -r requirements.txt
-   
-9. **Build up the Docker containers**
-    
-        docker-compose build #one time task; will take time ( ~ 45 mins using iitk-sec(Highspeed-5GHz) )
-        docker-compose up
+        Install the required packages:   
+           ```pip install --upgrade -r requirements.txt ```  
+9. **Build up the Docker containers**    
+        ```docker-compose build #one time task; will take time ( ~ 45 mins using iitk-sec(Highspeed-5GHz) )
+           docker-compose up```
 10. Once your container has been generated you would able to see in the docker app. You can run the app directly from there.
 11. Run the Pathway API :
-        `python3 main.py`
+        ```python3 main.py```
 12. Run the Ui via `ui.py`
-       `streamlit run ui.py`
+       ```streamlit run ui.py```
+
+### Demo video running project
+
+
