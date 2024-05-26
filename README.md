@@ -1,5 +1,8 @@
 # AeroIntel: AI Chatbot Assistant for Government Policymakers
 
+### Demo video running project
+<img src="image/GifMaker_20240525233544975.gif" alt="Image" width="600"/>
+
 **Overview:**
 AeroIntel is a cutting-edge RAG based AI assistant chatbot-GPT powered by OpenAI & Pathway created to aid government policymakers and high officials, especially from the Center of Atmospheric Sciences. This application delivers detailed insights and data on air quality, pollution control initiatives, and the health impacts of air pollution across India. AeroIntel leverages advanced AI technologies to support informed decision-making and effective policy implementation to combat air pollution.
 
@@ -124,8 +127,6 @@ WSL is a compatibility layer for running Linux binary executables natively on Wi
 12. Run the Ui via `ui.py`
        ```streamlit run ui.py```
 
-### Demo video running project
-<img src="image/GifMaker_20240525233544975.gif" alt="Image" width="600"/>
 
 
 
