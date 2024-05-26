@@ -79,6 +79,9 @@ WSL is a compatibility layer for running Linux binary executables natively on Wi
 5. **Install DropBox:**
      - Since we are using drop box as our context repository,we require drop box and the access token to call drop box api in order to download the context building materials.
      - Go to [DropBox oauth-guide](https://developers.dropbox.com/oauth-guide)  site to get your Dropbox access token
+       
+## Installation 
+
 6. **Clone this repo**
      - git clone https://github.com/Alphawarrior21/AeroIntel.git
      - Navigate to home directory -> cd AeroIntel
@@ -110,18 +113,21 @@ WSL is a compatibility layer for running Linux binary executables natively on Wi
         DROPBOX_LOCAL_FOLDER_PATH="./Dropbox"
       - All the important ministry documents will be placed in a common shared dropbox path which can act as a common repository for all the context training material fed to the encoder models to 
         generated embeddings. This could be made more robust in terms of the security but as for now in this project we see this dropbox directory as a golden source.
-   7. **Install the app dependencies**
+   
+7. **Install the app dependencies**
         Install the required packages:
-        ```python
-        pip install --upgrade -r requirements.txt
-   8. **Build up the Docker containers**
-        ```python
+   
+           pip install --upgrade -r requirements.txt
+   
+9. **Build up the Docker containers**
+    
         docker-compose build #one time task; will take time ( ~ 45 mins using iitk-sec(Highspeed-5GHz) )
         docker-compose up
-    9. Once your container has been generated you would able to see in the docker app. You can run the app directly from there.
-    10. Run the Pathway API :
-        ```python
+   
+11. Once your container has been generated you would able to see in the docker app. You can run the app directly from there.
+12. Run the Pathway API :
+
         python3 main.py
-    12. Run the Ui via `ui.py`
-        ```python
+14. Run the Ui via `ui.py`
+    
         streamlit run ui.py
