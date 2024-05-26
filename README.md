@@ -81,8 +81,19 @@ WSL is a compatibility layer for running Linux binary executables natively on Wi
      - Since we are using drop box as our context repository,we require drop box and the access token to call drop box api in order to download the context building materials.
      - Go to [DropBox oauth-guide](https://developers.dropbox.com/oauth-guide)  site to get your Dropbox access token
 6. **Clone this repo**
-   git clone https://github.com/Alphawarrior21/AeroIntel.git
-   Navigate to home directory -> cd AeroIntel
+     - git clone https://github.com/Alphawarrior21/AeroIntel.git
+     - Navigate to home directory -> cd AeroIntel
+     - Export Dropbox content to a 'local folder' inside the 'AeroIntel\Dropbox' folder. This can be done by running 'dropbox_script.py'. Remember , Windows users needs to run this step outside the
+       Linux/WSL-2 environment, i.e in the windows shell As, we need a common root for Dropbox ( C:\Users\Sumit Chand\Dropbox) and our project folder, which is present inside the linux/WSL-2
+       environment ( \\wsl.localhost\Ubuntu\home\Sumit\AeroIntel)
+     - Update Access Token in `dropbox_script.py` generated from dropbox developer section in above step.
+       ```python
+       # Define your access token
+       ACCESS_TOKEN = 'Dropbox access token'
+     - Update your local_path where your application will access files for context building and your dropbox path where the files will be kept originally.This will be done inside 
+       `dropbox_script.py`.
+       
+
 
     
 
