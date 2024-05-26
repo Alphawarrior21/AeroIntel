@@ -67,8 +67,7 @@ WSL is a compatibility layer for running Linux binary executables natively on Wi
        - **Portability:** Containers can run on any system that supports Docker, including different operating systems and cloud platforms.
        - **Efficiency:** Containers are more lightweight compared to virtual machines, sharing the host OS kernel and using fewer resources.
 
-2. **Using Docker with WSL:** Combining Docker with WSL 2 provides a powerful and efficient development environment on Windows. Docker Desktop for Windows integrates with WSL 2 to provide a native- 
-                like Linux development experience.
+2. **Using Docker with WSL:** Combining Docker with WSL 2 provides a powerful and efficient development environment on Windows. Docker Desktop for Windows integrates with WSL 2 to provide a native-like Linux development experience.
 
 3. **Install Docker Desktop:**
      - Download and install Docker Desktop for Windows from the Docker website.
@@ -92,6 +91,41 @@ WSL is a compatibility layer for running Linux binary executables natively on Wi
        ACCESS_TOKEN = 'Dropbox access token'
      - Update your local_path where your application will access files for context building and your dropbox path where the files will be kept originally.This will be done inside 
        `dropbox_script.py`.
+       ```python
+       # Specify the Dropbox path and local folder path
+        dropbox_path = 'C:\Users\Sumit Chand\Dropbox'
+        local_path = '\\wsl.localhost\Ubuntu\home\sumit\AeroIntel\Dropbox'
+      - We'll copy the dropbox content to this local Dropbox folder, inside our project folder.Run the `dropbox_script.py`
+      - Modiy the .env file in the root directory of the project.
+      - Replace the "OPENAI_API_TOKEN" value, place your OpenAI API key inside a quotation.Replace the dropbox address, use relative address of your dropbox.
+        ```python
+        OPENAI_API_TOKEN= "Your_OPENAI_API_KEY"
+        HOST=0.0.0.0
+        PORT=8080
+        EMBEDDER_LOCATOR=text-embedding-ada-002
+        EMBEDDING_DIMENSION=1536
+        MODEL_LOCATOR=gpt-3.5-turbo
+        MAX_TOKENS=200
+        TEMPERATURE=0.0
+        DROPBOX_LOCAL_FOLDER_PATH="./Dropbox"
+      - All the important ministry documents will be placed in a common shared dropbox path which can act as a common repository for all the context training material fed to the encoder models to 
+        generated embeddings. This could be made more robust in terms of the security but as for now in this project we see this dropbox directory as a golden source.
+   7. **Install the app dependencies**
+        Install the required packages:
+        ```python
+        pip install --upgrade -r requirements.txt
+   8. **Build up the Docker containers**
+        ```python
+        docker-compose build #one time task; will take time ( ~ 45 mins using iitk-sec(Highspeed-5GHz) )
+        docker-compose up
+    9. Once your container has been generated you would able to see in the docker app. You can run the app directly from there.
+    10. Run the Pathway API :
+        ```python
+        python3 main.py
+    12. Run the Ui via `ui.py`
+        ```python
+        streamlit run ui.py
+
        
 
 
